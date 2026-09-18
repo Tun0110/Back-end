@@ -12,7 +12,7 @@
         <header>
             <h1>Painel de Alunos</h1>
             <p>Demonstração de CRUD Frontend/Backend (Node.js)</p>
-            <button onclick="window.print()" style="margin-top: 1rem; padding: 10px 20px; font-weight: bold; cursor: pointer; border-radius: 8px; border: none; background: white; color: var(--primary-color);">⬇️ Baixar PDF</button>
+            <button onclick="window.print()" style="margin-top: 1rem; padding: 10px 20px; font-weight: bold; cursor: pointer; border-radius: 8px; border: none; background: white; color: var(--danger-color);">⬇️ Baixar PDF</button>
         </header>
 
         <main>
@@ -24,6 +24,14 @@
                     <div class="input-group">
                         <label for="nome">Nome Completo</label>
                         <input type="text" id="nome" required placeholder="Ex: João da Silva">
+                    </div>
+                    <div class="input-group">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" required placeholder="Ex: 0000000000">
+                    </div>
+                    <div class="input-group">
+                        <label for="idade">Idade</label>
+                        <input type="text" id="idade" required placeholder="Ex: 01">
                     </div>
                     <div class="input-group">
                         <label for="email">E-mail</label>
@@ -52,6 +60,8 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Nome</th>
+                                <th>CPF</th>
+                                <th>Idade</th>
                                 <th>Curso</th>
                                 <th>Ações</th>
                             </tr>
